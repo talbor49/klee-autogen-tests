@@ -23,12 +23,12 @@ static bool password_is_correct(char* thepassword) {
     return memcmp(thepassword, "secret", sizeof("secret")) == 0;
 }
 
-void get_packet(char packet[1500]) {
-    int rnd = open("/dev/random", O_RDONLY);
-    if (read(rnd, packet, sizeof(*packet)) == -1) {
-        perror("bad random read");
-    }
-}
+// void get_packet(char packet[1500]) {
+//    int rnd = open("/dev/random", O_RDONLY);
+//    if (read(rnd, packet, sizeof(*packet)) == -1) {
+//        perror("bad random read");
+//    }
+//}
 
 void handle_packet(char packet[1500]) {
     switch((unsigned char)packet[0]) {
