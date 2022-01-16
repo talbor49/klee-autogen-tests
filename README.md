@@ -1,4 +1,4 @@
 # klee-autogen-tests
 
 
-![Example][cov.gif]
+![Example](cov.gif)
